@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>VGS Challenge</title>
+        <!--CSS Link-->
+        <link rel="stylesheet" href="css/main.css">
+        <!--Import VGS Collect -->
+        <script type="text/javascript" src="https://js.verygoodvault.com/vgs-collect/2.2.1/vgs-collect.js"></script>
+        <!--Import JQuery-->
+        <script type="text/javascript" src="js/jq.js"></script>
+        <!--Import MainJS-->
+        <script type="text/javascript" src="js/main.js"></script>
+        <!--Import AjaxJQ/JS-->
+        <script type="text/javascript" src="js/ajax.js"></script>
+
+    </head>
+    <style>
+
+    </style>
+    <body>
+      <div id="CollectForRedactionContainer">
+        <form id="collect-form">
+          <div id="cc-holder" class="form-field"></div>
+          <div id="cc-number" class="form-field"></div>
+          <div class="form-field-group">
+            <div id="cc-expiration-date" class="form-field"></div>
+            <div id="cc-cvc" class="form-field"></div>
+          </div>
+          <button type="submit">Submit</button>
+        </form><br><br>
+        <h1>Redacted Results</h1>
+        <div>
+          <span><input id="InputCH"   type="text" placeholder="CardHolder" class="form-field" readonly></span><br>
+          <span><input id="InputCN"   type="text" placeholder="InputCN" class="form-field" readonly></span><br>
+          <span><input id="InputCEXP" type="text" placeholder="InputCEXP" class="form-field" readonly></span><br>
+          <span><input id="InputCCVC" type="text" placeholder="InputCCVC" class="form-field" readonly></span>
+        </div><br>
+        <button class="BTN" id='ButtonRemoveRedaction' type="submit">Remove Redaction</button>
+      </div>
+
+    </body>
+        <!--Import VGS Javascript -->
+        <script type="text/javascript" src="js/vgs.js"></script>
+</html>
