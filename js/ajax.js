@@ -1,4 +1,6 @@
-function AJAX(Async=null,Aurl=null,Atype=null,Adata=null,AdataType=null,debug=false){
+// AJAX Function to send information to PHP server
+// AJAX Functino to receive information from PHP server
+function AJAX(Async=null,Aurl=null,Atype=null,Adata=null,AdataType=null,debug=null){
     if(debug==true){
         alert('AJAX Received Data:' + Adata);
     }
@@ -17,7 +19,7 @@ function AJAX(Async=null,Aurl=null,Atype=null,Adata=null,AdataType=null,debug=fa
         },//end Success function
         error: function(data){
             if(debug==true){
-                alert(JSON.stringify(data));
+                alert('Error from PHP: ' + JSON.stringify(data));
             }
         }
 

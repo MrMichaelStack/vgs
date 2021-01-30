@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>VGS Challenge Reveal</title>
+        <!--CSS Link-->
+        <link rel="stylesheet" href="css/main.css">
+        <!--Import VGS Collect -->
+        <script type="text/javascript" src="https://js.verygoodvault.com/vgs-collect/2.2.1/vgs-collect.js"></script>
+        <!--Import JQuery-->
+        <script type="text/javascript" src="js/jq.js"></script>
+        <!--Import MainJS-->
+        <script type="text/javascript" src="js/main.js"></script>
+        <!--Import AjaxJQ/JS-->
+        <script type="text/javascript" src="js/ajax.js"></script>
+
+    </head>
+    <style>
+
+    </style>
+    <body>
+
+        <div class="CollectionContainer">
+            <div>
+                <span><input id="RMInputCH"   type="text" placeholder="CardHolder" class="form-field" ></span><br>
+                <span><input id="RMInputCN"   type="text" placeholder="InputCN" class="form-field" ></span><br>
+                <span><input id="RMInputCEXP" type="text" placeholder="InputCEXP" class="form-field" ></span><br>
+                <span><input id="RMInputCCVC" type="text" placeholder="InputCCVC" class="form-field" ></span>
+            </div><br>
+            <button class="BTN" id='ButtonRemoveRedaction' type="submit">Remove Redaction</button>
+            <br><br>
+            <h2>Revealed Results</h2>
+            <div>
+                <span><input id="RMInputCHClear"   type="text" placeholder="CardHolder" class="form-field" readonly></span><br>
+                <span><input id="RMInputCNClear"   type="text" placeholder="InputCN" class="form-field" readonly></span><br>
+                <span><input id="RMInputCEXPClear" type="text" placeholder="InputCEXP" class="form-field" readonly></span><br>
+                <span><input id="RMInputCCVCClear" type="text" placeholder="InputCCVC" class="form-field" readonly></span>
+            </div><br>
+            <input id= 'debug'>
+        </div>
+    </body>
+
+</html>

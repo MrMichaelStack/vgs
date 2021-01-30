@@ -1,4 +1,6 @@
 
+
+//VGS Supplied code for collect.js
 const vgsForm = window.VGSCollect.create('tnthgey3yhb', 'sandbox', () => {});
 
 const css = {
@@ -52,7 +54,7 @@ document.getElementById("collect-form").addEventListener('submit', (e) => {
     if (status === 200) {
         var res = JSON.stringify(response.data);
         //alert (JSON.parse(res));
-        StoreRedacted(res,debug=false);
+        StoreRedacted(res,false);
         console.log("success");
 
     }
